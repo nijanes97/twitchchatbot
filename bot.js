@@ -46,12 +46,12 @@ function onMessageHandler (target, context, msg, self) {
     } else if (commandName === '!catfact'){
         var fact = catfacts[Math.floor(Math.random()* catfacts.length)]
         client.say(target, `Your cat fact is: ${fact}`);
-        console.log(`* Executed ${commandName} command. ${num}`);
+        console.log(`* Executed ${commandName} command.`);
     } else if (commandName === 'gg') {
         ggNum++;
         console.log(context);
         client.say(target, `Chat has said gg ${ggNum} times. Kappa`);
-    } else if (commandName === 'merlock'){
+    } else if (commandName === 'murlock'){
         client.say(target, `/timeout ${context.username} 10`);
         client.say(target, `${context.username} has found the word of the day!`);
     } else {
